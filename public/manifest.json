@@ -1,0 +1,21 @@
+{
+  "name": "EL TERNERO Delivery",
+  "short_name": "EL TERNERO",
+  "description": "Seguimiento en Vivo y Pedidos EL TERNERO - Sabor que nace del campo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#047857",
+  "icons": [
+    {
+      "src": "/scooter.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/el_ternero_logo.svg",
+      "sizes": "600x600",
+      "type": "image/svg+xml"
+    }
+  ]
+}

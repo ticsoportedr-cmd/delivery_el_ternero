@@ -1,0 +1,27 @@
+# Dependencias y compilados
+node_modules/
+build/
+dist/
+coverage/
+
+# Datos en vivo (pedidos, clientes). Nunca a GitHub.
+data/
+
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Herramientas locales y registros
+herramientas/
+tunel.log
+instalacion.log
+servidor.log
+
+# Paquetes de instalación
+*.zip

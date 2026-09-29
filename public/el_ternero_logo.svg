@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Upper path for "EL TERNERO" (clockwise, arc from left to right) -->
+    <path id="pathTopElTernero" d="M 135,530 A 385,385 0 0,1 865,530" fill="none" />
+    
+    <!-- Lower path for "SABOR QUE NACE DEL CAMPO" -->
+    <path id="pathBottomSabor" d="M 865,565 A 395,395 0 0,1 135,565" fill="none" />
+
+    <!-- Sharp Serif Font Definition -->
+    <style>
+      .brand-title {
+        font-family: "Bodoni MT", "Didot", "Cinzel", "Playfair Display", "Times New Roman", Georgia, serif;
+        font-weight: 900;
+        font-size: 88px;
+        letter-spacing: 7px;
+        fill: #FFFFFF;
+      }
+      .brand-slogan {
+        font-family: "Bodoni MT", "Didot", "Cinzel", "Playfair Display", "Times New Roman", Georgia, serif;
+        font-weight: 800;
+        font-size: 36px;
+        letter-spacing: 8px;
+        fill: #FFFFFF;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Master Background Circle -->
+  <circle cx="500" cy="500" r="496" fill="#000000" />
+
+  <!-- 2. Outer Thick White Border Ring -->
+  <circle cx="500" cy="500" r="482" fill="none" stroke="#FFFFFF" stroke-width="11" />
+
+  <!-- 3. Inner White Ring Enclosing Center Calf Artwork -->
+  <circle cx="500" cy="500" r="332" fill="#000000" stroke="#FFFFFF" stroke-width="6.5" />
+
+  <!-- 4. Left & Right Separator Dots -->
+  <circle cx="92" cy="546" r="12" fill="#FFFFFF" />
+  <circle cx="908" cy="546" r="12" fill="#FFFFFF" />
+
+  <!-- 5. Top Curved Typography: EL TERNERO -->
+  <text class="brand-title">
+    <textPath href="#pathTopElTernero" startOffset="50%" text-anchor="middle">
+      EL TERNERO
+    </textPath>
+  </text>
+
+  <!-- 6. Bottom Curved Typography: SABOR QUE NACE DEL CAMPO -->
+  <text class="brand-slogan">
+    <textPath href="#pathBottomSabor" startOffset="50%" text-anchor="middle">
+      SABOR QUE NACE DEL CAMPO
+    </textPath>
+  </text>
+
+  <!-- 7. Centerpiece: Real Vector Engraving of "El Ternero" (Calf matching VECTORIZADO 2.png) -->
+  <g id="terneroArtwork" transform="translate(500, 525) scale(1.58)">
+    <!-- Base black underlay for calf -->
+    <path d="M-120,80 C-120,40 -100,5 -80,-15 C-70,-30 -55,-55 -55,-80 C-55,-120 -38,-135 0,-135 C38,-135 55,-120 55,-80 C55,-55 70,-30 80,-15 C100,5 120,40 120,80 C120,120 90,135 60,135 C35,135 25,122 0,122 C-25,122 -35,135 -60,135 C-90,135 -120,120 -120,80 Z" fill="#000000" />
+
+    <!-- LEFT EAR -->
+    <!-- Outer Ear Shape -->
+    <path d="M-44,-78 C-74,-96 -128,-94 -148,-62 C-159,-46 -144,-28 -120,-32 C-94,-38 -62,-58 -40,-68 Z" fill="#FFFFFF" />
+    <!-- Inner Ear Cavity Shadow -->
+    <path d="M-52,-72 C-76,-86 -118,-83 -134,-60 C-142,-48 -128,-39 -110,-41 C-86,-45 -64,-61 -48,-66 Z" fill="#000000" />
+    <!-- Inner Ear Hair Strands -->
+    <path d="M-66,-71 C-86,-79 -110,-76 -120,-62 C-110,-54 -88,-58 -68,-64 Z" fill="#FFFFFF" />
+    <path d="M-82,-66 C-98,-72 -114,-70 -124,-58 C-116,-52 -98,-55 -84,-60 Z" fill="#FFFFFF" />
+
+    <!-- RIGHT EAR -->
+    <!-- Outer Ear Shape -->
+    <path d="M44,-78 C74,-96 128,-94 148,-62 C159,-46 144,-28 120,-32 C94,-38 62,-58 40,-68 Z" fill="#FFFFFF" />
+    <!-- Inner Ear Cavity Shadow -->
+    <path d="M52,-72 C76,-86 118,-83 134,-60 C142,-48 128,-39 110,-41 C86,-45 64,-61 48,-66 Z" fill="#000000" />
+    <!-- Inner Ear Hair Strands -->
+    <path d="M66,-71 C86,-79 110,-76 120,-62 C110,-54 88,-58 68,-64 Z" fill="#FFFFFF" />
+    <path d="M82,-66 C98,-72 114,-70 124,-58 C116,-52 98,-55 84,-60 Z" fill="#FFFFFF" />
+
+    <!-- CROWN & FOREHEAD WHITE BASE -->
+    <path d="M-42,-78 C-30,-112 -15,-124 0,-124 C15,-124 30,-112 42,-78 C56,-52 52,-20 46,6 C40,26 36,46 30,56 C15,65 -15,65 -30,56 C-36,46 -40,26 -46,6 C-52,-20 -56,-52 -42,-78 Z" fill="#FFFFFF" />
+
+    <!-- BLACK FOREHEAD / FACE MARKINGS -->
+    <path d="M-30,-96 C-14,-102 14,-102 30,-96 C38,-76 32,-48 25,-20 C18,-5 12,16 0,20 C-12,16 -18,-5 -25,-20 C-32,-48 -38,-76 -30,-96 Z" fill="#000000" />
+
+    <!-- WHITE FOREHEAD BLAZE (STAR) -->
+    <path d="M0,-92 C10,-80 15,-66 0,-48 C-15,-66 -10,-80 0,-92 Z" fill="#FFFFFF" />
+    <circle cx="0" cy="-68" r="3.5" fill="#000000" />
+    <path d="M-4,-70 L0,-62 L4,-70 Z" fill="#FFFFFF" />
+
+    <!-- EYES (Detailed engraving style) -->
+    <!-- Left Eye -->
+    <g id="leftEye">
+      <ellipse cx="-35" cy="-28" rx="13" ry="9.5" transform="rotate(-14 -35 -28)" fill="#000000" />
+      <ellipse cx="-35" cy="-28" rx="10" ry="6.8" transform="rotate(-14 -35 -28)" fill="#FFFFFF" />
+      <circle cx="-34" cy="-28" r="5.5" fill="#000000" />
+      <circle cx="-36.5" cy="-30.5" r="2.2" fill="#FFFFFF" />
+      <!-- Brow outline -->
+      <path d="M-49,-38 C-41,-46 -27,-44 -20,-36" fill="none" stroke="#000000" stroke-width="2.8" stroke-linecap="round" />
+      <path d="M-46,-41 C-39,-48 -28,-46 -22,-39" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" />
+    </g>
+
+    <!-- Right Eye -->
+    <g id="rightEye">
+      <ellipse cx="35" cy="-28" rx="13" ry="9.5" transform="rotate(14 35 -28)" fill="#000000" />
+      <ellipse cx="35" cy="-28" rx="10" ry="6.8" transform="rotate(14 35 -28)" fill="#FFFFFF" />
+      <circle cx="34" cy="-28" r="5.5" fill="#000000" />
+      <circle cx="32" cy="-30.5" r="2.2" fill="#FFFFFF" />
+      <!-- Brow outline -->
+      <path d="M49,-38 C41,-46 27,-44 20,-36" fill="none" stroke="#000000" stroke-width="2.8" stroke-linecap="round" />
+      <path d="M46,-41 C39,-48 28,-46 22,-39" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" />
+    </g>
+
+    <!-- SNOUT / NOSE / MUZZLE -->
+    <path d="M-35,16 C-31,2 -20,-6 0,-6 C20,-6 31,2 35,16 C39,36 33,56 0,58 C-33,56 -39,36 -35,16 Z" fill="#000000" />
+    
+    <!-- Snout Bridge Top Highlight -->
+    <path d="M-22,6 C-11,1 11,1 22,6 C26,15 21,25 0,25 C-21,25 -26,15 -22,6 Z" fill="#FFFFFF" />
+    <!-- Nostrils with white rim -->
+    <ellipse cx="-17" cy="31" rx="7.5" ry="5.5" transform="rotate(12 -17 31)" fill="#000000" stroke="#FFFFFF" stroke-width="2" />
+    <ellipse cx="17" cy="31" rx="7.5" ry="5.5" transform="rotate(-12 17 31)" fill="#000000" stroke="#FFFFFF" stroke-width="2" />
+    
+    <!-- Mouth and Chin -->
+    <path d="M-16,48 C-7,52 7,52 16,48" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M-13,54 C-5,58 5,58 13,54" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+    <ellipse cx="0" cy="56" rx="6" ry="2" fill="#FFFFFF" />
+
+    <!-- BODY, CHEST & SHOULDERS -->
+    <path d="M-46,46 C-72,62 -104,82 -118,112 C-102,124 -80,116 -62,102 C-52,117 -30,126 0,126 C30,126 52,117 62,102 C80,116 102,124 118,112 C104,82 72,62 46,46 Z" fill="#FFFFFF" />
+
+    <!-- ENGRAVED FUR SHADOWS ON SHOULDERS & NECK -->
+    <!-- Left Shoulder Shadow & Woodcut Hatching -->
+    <path d="M-56,56 C-82,74 -100,94 -107,110 C-94,114 -77,104 -64,90 C-60,76 -58,64 -56,56 Z" fill="#000000" />
+    <path d="M-98,96 C-90,88 -82,95 -76,85" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M-88,104 C-80,96 -74,101 -68,93" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <path d="M-78,110 C-72,104 -66,108 -62,100" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- Right Shoulder Shadow & Woodcut Hatching -->
+    <path d="M56,56 C82,74 100,94 107,110 C94,114 77,104 64,90 C60,76 58,64 56,56 Z" fill="#000000" />
+    <path d="M98,96 C90,88 82,95 76,85" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M88,104 C80,96 74,101 68,93" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <path d="M78,110 C72,104 66,108 62,100" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- Center Chest Neck Crease Shadows -->
+    <path d="M-24,60 C-11,72 0,74 0,74 C0,74 11,72 24,60 C15,82 0,92 0,92 C0,92 -15,82 -24,60 Z" fill="#000000" />
+    <path d="M-16,84 C-6,94 0,96 0,96 C0,96 6,94 16,84" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <path d="M-12,90 C-4,98 0,100 0,100 C0,100 4,98 12,90" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- FOLDED HOOVES IN FRONT -->
+    <!-- Left Hoof Fold -->
+    <path d="M-56,106 C-46,96 -26,99 -18,114 C-22,126 -43,128 -56,118 Z" fill="#000000" />
+    <path d="M-49,112 C-39,104 -29,110 -25,118" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M-43,122 C-35,118 -29,122 -26,124" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- Right Hoof Fold -->
+    <path d="M56,106 C46,96 26,99 18,114 C22,126 43,128 56,118 Z" fill="#000000" />
+    <path d="M49,112 C39,104 29,110 25,118" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M43,122 C35,118 29,122 26,124" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- Base Shadow Ground Line -->
+    <ellipse cx="0" cy="128" rx="92" ry="9" fill="#000000" opacity="0.85" />
+  </g>
+</svg>

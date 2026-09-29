@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="160" cy="255" rx="120" ry="12" fill="#1e293b" opacity="0.18" />
+
+  <!-- REAR WHEEL -->
+  <g id="rear-wheel">
+    <circle cx="82" cy="210" r="36" fill="#27272a" />
+    <circle cx="82" cy="210" r="24" fill="#e4e4e7" />
+    <circle cx="82" cy="210" r="16" fill="#a1a1aa" />
+    <circle cx="82" cy="210" r="6" fill="#27272a" />
+    <!-- Spokes -->
+    <line x1="82" y1="186" x2="82" y2="234" stroke="#71717a" stroke-width="2" />
+    <line x1="58" y1="210" x2="106" y2="210" stroke="#71717a" stroke-width="2" />
+    <line x1="65" y1="193" x2="99" y2="227" stroke="#71717a" stroke-width="2" />
+    <line x1="65" y1="227" x2="99" y2="193" stroke="#71717a" stroke-width="2" />
+  </g>
+
+  <!-- FRONT WHEEL -->
+  <g id="front-wheel">
+    <circle cx="238" cy="210" r="36" fill="#27272a" />
+    <circle cx="238" cy="210" r="24" fill="#e4e4e7" />
+    <circle cx="238" cy="210" r="16" fill="#a1a1aa" />
+    <circle cx="238" cy="210" r="6" fill="#27272a" />
+    <!-- Spokes -->
+    <line x1="238" y1="186" x2="238" y2="234" stroke="#71717a" stroke-width="2" />
+    <line x1="214" y1="210" x2="262" y2="210" stroke="#71717a" stroke-width="2" />
+    <line x1="221" y1="193" x2="255" y2="227" stroke="#71717a" stroke-width="2" />
+    <line x1="221" y1="227" x2="255" y2="193" stroke="#71717a" stroke-width="2" />
+  </g>
+
+  <!-- SCOOTER CHASSIS & LOWER BODY (BLACK PARTS) -->
+  <!-- Engine and rear guard -->
+  <path d="M 60,185 Q 90,165 140,180 L 195,190 L 195,215 L 60,215 Z" fill="#18181b" />
+
+  <!-- Exhaust Pipe -->
+  <rect x="50" y="212" width="60" height="10" rx="5" fill="#3f3f46" stroke="#18181b" stroke-width="1.5" />
+
+  <!-- SCOOTER EMERALD GREEN BODYWORK -->
+  <!-- Main Curved Emerald Green Body -->
+  <path d="M 52,170 C 50,135 90,130 135,135 C 150,150 160,195 125,210 C 85,220 54,200 52,170 Z" fill="#10b981" stroke="#059669" stroke-width="2" />
+  
+  <!-- Curved floorboard swoop -->
+  <path d="M 125,205 C 155,205 180,195 195,160 L 210,130 L 185,130 L 140,185 Z" fill="#27272a" />
+  <path d="M 125,212 L 200,212 C 205,200 200,180 192,160 Z" fill="#10b981" />
+
+  <!-- Front Shield & Fender (Emerald Green) -->
+  <path d="M 185,130 L 210,80 C 215,75 220,75 225,85 L 235,140 C 238,155 230,175 205,185 L 185,130 Z" fill="#10b981" stroke="#047857" stroke-width="1.5" />
+  <path d="M 215,180 C 215,165 260,165 260,185 L 215,185 Z" fill="#10b981" stroke="#047857" stroke-width="1.5" />
+
+  <!-- Black Seat -->
+  <path d="M 115,135 C 115,125 140,122 175,130 C 180,138 170,145 130,145 Z" fill="#09090b" />
+
+  <!-- Rear Rack Structure -->
+  <rect x="52" y="138" width="65" height="7" fill="#27272a" rx="2" />
+  <line x1="60" y1="145" x2="60" y2="168" stroke="#27272a" stroke-width="4" />
+  <line x1="110" y1="145" x2="110" y2="168" stroke="#27272a" stroke-width="4" />
+
+  <!-- EMERALD GREEN DELIVERY BOX -->
+  <g id="delivery-box" filter="url(#shadow)">
+    <rect x="52" y="80" width="62" height="58" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+    
+    <!-- Box Emblem (Badge Ring & Steer/Fork) -->
+    <circle cx="83" cy="109" r="13" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    <circle cx="83" cy="109" r="8" fill="#064e3b" />
+    
+    <!-- Ternero / Steak Silhouette -->
+    <path d="M 78,107 Q 83,103 88,107 Q 85,114 83,114 Q 81,114 78,107 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- HANDLEBARS & HEADLIGHT / MIRROR -->
+  <path d="M 195,85 L 208,80 L 210,85" stroke="#18181b" stroke-width="4" stroke-linecap="round" fill="none" />
+  <!-- Headlight Box (Black & Emerald) -->
+  <rect x="202" y="70" width="22" height="16" rx="4" fill="#18181b" />
+  <circle cx="220" cy="78" r="5" fill="#6ee7b7" />
+  <!-- Mirror -->
+  <line x1="198" y1="78" x2="192" y2="62" stroke="#18181b" stroke-width="2" />
+  <ellipse cx="191" cy="60" rx="3.5" ry="5" fill="#18181b" transform="rotate(-15 191 60)" />
+
+  <!-- RIDER / DRIVER -->
+  <!-- Legs / Pants (Black) -->
+  <path d="M 135,130 C 135,120 150,130 162,150 L 168,188 L 150,188 L 146,155 L 130,135 Z" fill="#27272a" />
+  
+  <!-- Shoes (Emerald & Black) -->
+  <path d="M 148,188 L 175,188 C 180,188 180,196 172,198 L 148,198 Z" fill="#10b981" stroke="#18181b" stroke-width="1.5" />
+  <rect x="148" y="194" width="26" height="4" fill="#18181b" />
+
+  <!-- Torso & Arms -->
+  <!-- Emerald Green Vest / Shirt over Black Sleeves -->
+  <path d="M 128,88 L 152,88 L 156,128 L 126,128 Z" fill="#059669" stroke="#047857" stroke-width="1" />
+  <path d="M 128,88 L 140,88 L 138,128 L 126,128 Z" fill="#18181b" />
+
+  <!-- Arm Extended to Handlebars -->
+  <path d="M 140,93 L 195,98 L 195,105 L 140,102 Z" fill="#f3d2c1" />
+  <!-- Glove / Hand on handlebar -->
+  <circle cx="195" cy="100" r="5" fill="#18181b" />
+
+  <!-- Head & Face -->
+  <path d="M 138,62 C 138,55 145,55 152,58 C 158,62 160,68 156,74 C 150,78 142,76 138,70 Z" fill="#f3d2c1" />
+  <circle cx="152" cy="65" r="1.5" fill="#18181b" />
+  <path d="M 150,70 Q 153,73 156,70" fill="none" stroke="#18181b" stroke-width="1.2" stroke-linecap="round" />
+  <path d="M 156,65 L 160,67 L 156,69" fill="none" stroke="#f3d2c1" stroke-width="1" />
+
+  <!-- Hair (Black) -->
+  <path d="M 134,60 C 130,68 132,76 137,80 C 139,76 138,70 138,62 Z" fill="#18181b" />
+
+  <!-- EMERALD HELMET -->
+  <path d="M 132,58 C 132,38 160,38 166,55 C 168,60 162,64 150,64 C 138,64 132,60 132,58 Z" fill="#047857" stroke="#064e3b" stroke-width="1.5" />
+  <!-- Visor peak -->
+  <path d="M 158,52 L 170,55 L 162,58 Z" fill="#18181b" />
+  <!-- Strap -->
+  <path d="M 144,63 L 146,75 L 150,75 L 148,63" fill="#18181b" />
+</svg>
